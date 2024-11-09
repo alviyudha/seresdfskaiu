@@ -1,0 +1,703 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap');
+:root{
+  --text-orange:rgb(240, 110, 36);
+  --text-orange-RGB:240, 110, 36;
+  --text-secondary:rgb(77, 77, 77);
+  --text-secondary-rgb:77, 77, 77;
+  --color-primary:rgb(240, 110, 35);
+}
+
+body{
+  background-color: #fff;
+}
+.sticky-top {
+  background-color: white;
+}
+.ReactModal__Overlay .ReactModal__Overlay--after-open{
+  background-color: #263238;
+}
+.text-color-orange{
+color:var(--text-orange) !important;
+}
+.text-color-primary{
+color:var(--text-orange) !important;
+}
+.text-color-gray{
+color:var(--text-secondary) !important;
+}
+*{
+text-decoration: none !important;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+
+}
+
+
+/* ===================Section general======================= */
+.section-custom{
+  margin-bottom:3px;
+  padding: 50px;
+  background-color: #fff;
+  border-bottom: 1px solid var(--color-primary);
+
+}
+.section-custom .header-text{
+  font-family: 'Poppins';
+  color: #263238;
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+}
+.section-custom .caption-text{
+  text-align: center;
+  color: #7e858f;
+  font-size: 18px;
+}
+
+
+
+
+/* ===================Navbar======================= */
+#navbarNav ul li a {
+  color: hwb(22 16% 1%);
+  font-size: 18px;
+
+}
+
+.navbar-show {
+    transform: translateY(0);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .navbar-hide {
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
+  }
+  .navbar{
+    background-color: white;
+  }
+  .fixed-top{
+    transition: all 0.8s;
+  }
+
+  a.nav-link-underline::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: var(--text-orange); 
+    left: 0;
+    bottom: -2px; 
+    transition: width 0.3s ease, opacity 0.3s ease, transform 0.3s ease; 
+    transform-origin: right;
+    opacity: 0;
+  }
+  
+  #navbarNav a.nav-link-underline:hover::after {
+    width: 100%; 
+    opacity: 1;
+    position: relative;
+    transition: all 0.5s;
+  }
+  a.nav-link.dropdown-toggle::after{
+
+    vertical-align: 0.195em;
+  }
+   /* ===================Carousel caption======================= */
+   #carouselCaption .carousel-indicators button{
+    width: 12px;
+    height: 12px;
+    border-radius: 50% !important;
+    
+  }
+  
+  .carousel-indicators [data-bs-target]{
+    background-color: var(--color-primary);
+  }
+  /* ===================Featured Services======================= */
+  .featured-services .service-item {
+    padding: 50px;
+    transition: all ease-in-out 0.4s;
+    background: #fff;
+  }
+  
+  .featured-services .service-item .icon {
+    margin-bottom: 10px;
+  }
+  
+  .featured-services .service-item .icon svg {
+    color: var(--color-primary);
+    font-size: 36px;
+    transition: 0.3s;
+  }
+  
+  .featured-services .service-item h4 {
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-size: 24px;
+  }
+  
+  .featured-services .service-item .stretched-link {
+    color: rgba(72, 86, 100,0.8);
+    transition: ease-in-out 0.3s;
+  }
+  
+  .featured-services .service-item p {
+    line-height: 24px;
+    font-size: 18px;
+    margin-bottom: 0;
+    color: #7e858f;
+  }
+  
+  .featured-services .service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 0 60px 0 rgba(var(--text-orange-RGB),05);
+    border-radius: 8%;
+  }
+  
+  .featured-services .service-item:hover .stretched-link {
+    color: var(--color-primary);
+  }
+  
+
+
+  /* ===================Product======================= */
+  #nav-tab .box-tab-carousel{
+    border: 2px solid var(--color-primary);
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  #nav-tab a{
+    color: var(--color-primary)!important;
+    margin:0 5px;
+    padding: 5px 10px;
+  }
+  #productVehicles .nav-tabs{
+   border-bottom: 2px solid var(--color-primary);
+   margin: 10px;
+  }
+  #nav-tab a.active{
+    color: #fff !important;
+    padding: 5px 10px;
+    background-color: rgb(240, 110, 35);
+    border-radius: 30px;
+    box-shadow: 3px 5px 5px 0 rgba(0240, 110, 35,.549);
+    content: "";
+  }
+  
+#nav-slide1 .BROCHURE{
+  border: none;
+  background-color: #fff;
+  color: var(--color-primary);
+  border-radius: 2rem;
+  margin: 5px;
+  
+}
+.box-brochure{
+border: 1px solid var(--color-primary);
+border-radius: 2rem;
+position: absolute;
+padding: none;
+
+
+}
+.box-brochure button{
+  border: none;
+
+
+}
+.box-brochure .btn-explore{
+
+background: var(--color-primary);
+color: #fff !important;
+border-radius: 2rem;
+padding: 8px;
+
+}
+.box-brochure .btn-explore a{
+color: #fff;
+}
+
+
+  /* ===================Footer======================= */
+.footer {
+  color: var(--color-primary);
+  font-size: 14px;
+}
+
+.footer .footer-content {
+  padding: 60px 0 30px 0;
+}
+
+.footer .footer-content .footer-info {
+  margin-bottom: 30px;
+}
+
+.footer .footer-content .footer-info h3 {
+  font-size: 28px;
+  margin: 0 0 20px 0;
+  padding: 2px 0 2px 0;
+  line-height: 1;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+
+.footer .footer-content .footer-info p {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 0;
+  color: #7e858f;
+  font-weight: 400;
+}
+
+.footer .footer-content h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-primary);
+  position: relative;
+  padding-bottom: 12px;
+  margin-bottom: 15px;
+}
+
+.footer .footer-content h4::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 2px;
+  background:var(--color-primary);
+  bottom: 0;
+  left: 0;
+}
+
+.footer .footer-content .footer-links {
+  margin-bottom: 30px;
+}
+
+.footer .footer-content .footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer .footer-content .footer-links ul svg {
+  padding-right: 2px;
+  color: #7e858f;
+  font-size: 12px;
+  line-height: 1;
+}
+
+
+
+.footer .footer-content .footer-links  a {
+  color: #7e858f;
+  transition: 0.3s;
+  display: inline-block;
+  line-height: 1;
+  margin-left: 5px;
+}
+
+.footer .footer-content .footer-links  a:hover {
+  color:var(--color-primary);
+}
+
+
+.footer .footer-legal {
+  padding: 30px 0;
+  background: #575c61;
+}
+
+.footer .footer-legal .credits {
+  padding-top: 4px;
+  font-size: 13px;
+  color: var(--color-white);
+}
+
+.footer .footer-legal .credits a {
+  color: var(--color-primary-light);
+}
+
+.footer .footer-legal .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: rgba(var(--color-white-rgb), 0.1);
+  color: var(--color-white);
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 4px;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+.footer .footer-legal .social-links a:hover {
+  background: white;
+  text-decoration: none;
+}
+
+.footer .footer-links a {
+  cursor: pointer;
+}
+
+  /* ===================Service Form======================= */
+  .BookingServices {
+    padding: 0 25% ;
+  }
+  .BookingServices .box-form{
+    margin: 10% auto;
+    padding: 20px;
+  }
+  @media screen and (max-width: 768px) {
+    .BookingServices {
+      padding: 0 5%; 
+    }
+  
+    .BookingServices .box-form {
+      margin: 10% auto;
+      padding: 20px;
+      max-width: 100%; 
+    }
+  }
+  
+  /* Media query untuk layar berukuran kecil */
+  @media screen and (max-width: 576px) {
+    .BookingServices {
+      padding: 0 10% ;
+    }
+    .BookingServices .box-form{
+      margin: 10% auto;
+      padding: 20px;
+    }
+  }
+/* ===================Dealer page======================= */
+  .box-tab-secvehicles{
+    /* border: 1px solid #00095b; */
+    background-color: gainsboro;
+    margin-bottom: 20px;
+   }
+   #nav-tab .nav-link-sec {
+     color: #fff;
+     border-radius: 0;
+   }
+   .box-tab-secvehicles .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link-sec.active{
+     color: var(--text-orange) !important;
+   }
+   
+   #buttonColor .btn{
+     border-radius: 15%;
+     background-color: #fe1e4f;
+     padding: 5.1%;
+     margin: 2px;
+     box-shadow: 0 4px 6px 0 rgba(0,0,0,0.3);
+     /* visibility: hidden; */
+   }
+   #cardCustom a svg {
+    color:#7e858f !important;
+   }
+   #cardCustom a:hover svg {
+    color:var(--color-primary) !important;
+   }
+   .toast{
+    background-color: white !important;
+   }
+
+
+/* ===================Models page======================= */
+   
+
+.box-tab-secvehicles{
+  background: rgb(240,110,35);
+  background: linear-gradient(90deg, rgba(240,110,35,1) 0%, rgba(240,110,35,1) 43%, rgba(217,217,217,1) 91%);
+  margin-bottom: 20px;
+}
+#section-secvehicles .nav-link-sec {
+  color: #fff;
+  border-radius: 0;
+}
+.box-tab-secvehicles .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link-sec.active{
+  color: var(--text-orange) !important;
+}
+.card-vehicles{
+  padding: 2%;
+}
+.card-vehicles:hover{
+  box-shadow: 0 3px 20px rgba(0,0,0,0.5);
+  /* padding: 5px ; */
+  transition: all .5s;
+  /* padding: 0px ; */
+}
+.vehicles-card-caption{
+  font-weight: bold;
+  color: var(--color-primary);
+}
+/* ===================Models page/tabs======================= */
+#tabModelsDetail button{
+  color: #263238;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: large;
+}
+#tabModelsDetail button:hover{
+  color: #f06e23;
+}
+#tabModelsDetail a{
+  color: #263238;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: large;
+}
+#tabModelsDetail a:hover{
+  color: #f06e23;
+}
+#tabModelsDetail button.active{
+  color: #f06e23;
+}
+/* ===================Models page/tabs/colors======================= */
+#pageColorCars .pageColorHeader{
+  color:#263238;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: xx-large;
+  text-shadow: 5px -20px rgba(var(--text-secondary-rgb),0.2);
+}
+#pageColorCars .title-cars{
+  color:var(--text-secondary);
+}
+#pageColorCars .btn-colors {
+  transition: transform 0.2s, background-color 0.2s, box-shadow 0.2s;
+  border: none; 
+  border-radius: 50%;
+  box-shadow: 1px 1px 5px #f06e23; 
+}
+
+#pageColorCars .btn-colors:hover {
+  transform: scale(1.1);
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.descColor{
+  font-weight: 600;
+  color: #575c61;
+}
+
+/* ===================Models page/tabs/interior======================= */
+/* #nav-interior .card{
+  border: none;
+}
+#nav-interior .img-interior{
+  height: 400px !important;
+  background-repeat: no-repeat;
+  background-position: center; 
+} */
+#slickSlyncing .img-fluid{
+  max-height: 440px;
+  width: 100%;
+}
+#slickSlyncing .slick-prev:before, .slick-next:before {
+  color: var(--color-primary);
+  z-index: 1001;
+}
+/* #slickSlyncing .slick-initialized .slick-prev:before, .slick-next:before{
+  color: var(--color-primary);
+} */
+/* ===================Models page/tabs/exterior======================= */
+#nav-exterior .card{
+  border: none;
+  /* background-color: #263238; */
+}
+#nav-exterior {
+  padding: 10px;
+  /* background-color: #263238; */
+}
+#nav-exterior .card-title {
+  font-weight: 600;
+  text-shadow: 5px -20px rgba(var(--text-secondary-rgb),0.2);
+}
+#nav-exterior .card-text {
+  color: var(--text-secondary);
+  font-size: 24px;
+}
+
+/* ===================Models page/tabs/gallery======================= */
+.img-thumbnail {
+  transition: transform 0.9s;
+}
+
+.img-thumbnail:hover {
+  transform: scale(1.1);
+}
+.modal-content{
+  background-color:transparent !important;
+  border: none !important;
+}
+
+/* ===================test error======================= */
+
+
+
+
+
+
+
+/* Mengubah warna latar belakang dan ikon pada tombol "Previous" (prev) */
+.carousel-control-prev {
+  background-color: #007bff; /* Warna latar belakang sesuaikan dengan yang diinginkan */
+  border: none;
+}
+
+/* Mengubah warna ikon pada tombol "Previous" (prev) */
+.carousel-control-prev-icon {
+  color: red !; /* Warna ikon sesuaikan dengan yang diinginkan */
+}
+
+/* Mengubah warna latar belakang dan ikon pada tombol "Next" (next) */
+.carousel-control-next {
+  background-color: #007bff; /* Warna latar belakang sesuaikan dengan yang diinginkan */
+  border: none;
+}
+
+/* Mengubah warna ikon pada tombol "Next" (next) */
+.carousel-control-next-icon {
+  color: red; /* Warna ikon sesuaikan dengan yang diinginkan */
+}
+
+/* ===================slick product cars======================= */
+
+#slideCars .slick-slide {
+	transform: scale(0.4);
+	transition: all 0.4s ease-in-out;
+	padding: 40px 0;
+}
+
+
+#slideCars .slick-slide img {
+	max-width: 100%;
+	transition: all 0.4s ease-in-out;
+}
+
+#slideCars .slick-center {
+	transform: scale(1.6);
+  
+}
+@media screen and (max-width: 576px) {
+  #slideCars .slick-center {
+    transform: scale(1);
+  }
+}
+@media screen and (max-width: 600px) {
+  #slideCars .slick-center {
+    transform: scale(1);
+  }
+}
+#slideCars .slick-prev:before,#slideCars .slick-next:before{
+    color: var(--color-primary);
+    font-size: 25px;
+}
+#slideCars .btn{
+  color: var(--color-primary);
+}
+#slideCars .btn:hover{
+  color: white;
+  background-color: var(--color-primary);
+  transition: all 1s;
+}
+/* ======================= tab ======================= */
+#tabProduct .nav-link{
+  color: var(--color-primary) !important;
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+/* ===================Models details/tab detail / design ======================= */
+#tabDesign .card{
+  border: none;
+  -webkit-box-shadow: -6px 3px 74px -20px rgba(240, 110, 36);
+-moz-box-shadow: -6px 3px 74px -20px rgba(240, 110, 36);
+box-shadow: -6px 3px 74px -20px rgba(240, 110, 36);
+}
+
+
+
+
+/* ===================Dealer/tabs======================= */
+#nav-tab-dealer .nav-tabs .nav-item.show .nav-link,#nav-tab-dealer .nav-tabs .nav-link.active {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+#nav-tab-dealer .nav-tabs .nav-link {
+  color: var(--color-primary);
+}
+#nav-tab-dealer .nav-link:hover{
+  background-color: var(--color-primary);
+  color: white;
+}
+#card-dealer-footer.card-footer a{
+  color: var(--color-primary);
+  margin-right: 4%;
+}
+#card-dealer-footer.box-tab-carousel{
+  border: 1px solid #00095b;
+  border-radius: 2rem;
+}
+
+
+/* ===================social share ======================= */
+#fixed-social .social{
+  z-index: 999;
+}
+
+#fixed-social  ul.social{
+  list-style: none;
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+ 
+}
+#fixed-social ul li{
+  margin: 5px 0;
+  
+}
+#fixed-social  ul li a{
+  text-decoration: none;
+  color: #fff;
+  height: 40px;
+  line-height: 40px;
+  display: flex;
+  
+}
+#fixed-social  ul li a span:nth-child(2){
+  background: var(--color-primary);
+  width: 40px;
+  height: 100%;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 12px;
+  
+  /* padding: 5px; */
+}
+
+#fixed-social  ul li a span:nth-child(1){
+  width: 0;
+  height: 100%;
+  background: var(--color-primary);
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding-left: 0;
+  letter-spacing: 2px;
+  overflow: hidden;
+  margin-right: 5px;
+  border-radius: 50px 0px 0px 50px;
+  transition: 0.8s ease;
+}
+#fixed-social ul li a:hover span:nth-child(1){
+  width: 180px;
+  padding-left: 20px;
+}
