@@ -9,6 +9,7 @@ import Models from './Pages/Models'
 import ModelsDetail from './Pages/ModelsDetail'
 import Layout from './Layout'
 import CookieConsentComp from './Components/CookieConsent'
+import PrivacyPolicy from './Pages/PrivacyPolicy'
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         <Route path='/booking/test-drive' element={<TestDrive />} />
         <Route path='/models' element={<Models />} />
         <Route path='/model/details/:modelName' element={<ModelsDetail />} />
+        <Route path='/privacy-policy' element={<PrivacyPolicy />} />
         <Route path='*' element={<ErrorPage/>} />
         </Route>
       </Routes>
