@@ -2,7 +2,7 @@ function PrivacyPolicy() {
   return (
     <div className="bg-light py-5 px-3">
       <div className="container bg-white p-4 shadow-lg rounded">
-        <h1 className="text-center text-primary mb-4">
+        <h1 className="text-center text-danger mb-4">
           Kebijakan Privasi Laman Situs Website
         </h1>
         <p className="text-center text-muted mb-5">
